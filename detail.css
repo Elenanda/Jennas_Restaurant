@@ -1,0 +1,87 @@
+body {
+  font-family: "comic sans ms", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("asset/bg5.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header h1 {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 55px;
+  color: rgb(184, 11, 11);
+  text-align: center;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.detail-photo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detail-info {
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 40px;
+  color: rgb(184, 11, 11);
+}
+
+.price {
+  font-size: 16px;
+  color: #777;
+}
+
+.product-details p {
+  font-size: 20px;
+  color: black;
+  line-height: 1.5;
+}
+bentuk {
+  font-family: "comic sans ms", sans-serif;
+  background-color: rgb(184, 11, 11);
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5rem;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 20%;
+  margin: 100px;
+  
+}
+
+bentuk input[type="button"] {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.941);
+  background-color: inherit;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  align-items: center;
+  
+}
+
+.footer {
+  font-family: "comic sans ms", sans-serif;
+  text-align: center;
+  padding: 2px;
+  background-color: #0a0a0a;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #fdfcfc;
+}

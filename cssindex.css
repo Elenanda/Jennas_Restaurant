@@ -1,0 +1,437 @@
+:root {
+  --primary: white;
+  --bg: white;
+}
+
+* {
+  font-family: "comic sans ms";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-family: "Lemon", serif;
+  background-color: var(--bg);
+  color: rgb(149, 81, 81);
+  min-height: 4000px;
+}
+
+
+/* start navbar desain */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0.6rem 7%;
+  background-color: rgb(184, 11, 11);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: rgba(0, 0, 0, 0.562);
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0.1rem;
+  margin-left: 170px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(255, 174, 0);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid rgb(255, 174, 0);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: rgb(255, 255, 255);
+  margin: 8px;
+}
+
+.navbar .navbar-extra a:hover {
+  color: rgb(0, 0, 0);
+}
+
+#hamburger-menu {
+  display: none;
+  color: aliceblue;
+}
+/* end navbar desain */
+
+/* start main desain */
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("asset/bg1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background-color: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.906) 8%,
+    rgba rgba(255, 255, 255, 0.906) 25%
+  );
+}
+
+.main .content {
+  padding: 1.4rem 3%;
+  max-width: 100%;
+}
+
+.main .content h1 {
+  font-size: 5em;
+  color: rgb(251, 247, 247);
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.main .content h1 span {
+  color: rgba(255, 255, 255, 0.979);
+  text-shadow: black;
+}
+
+.main .content p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  color: rgb(255, 174, 0);
+}
+
+.main .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgb(184, 11, 11);
+  border-radius: 10rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* end main desain */
+
+/* start About desain */
+.about,
+.menu,
+.contact {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  color: rgb(184, 11, 11);
+}
+
+.about h2 span,
+.menu h2 span,
+.contact h2 span {
+  color: rgb(255, 174, 0);
+}
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  border-radius: 5px;
+  width: 100%;
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: rgb(184, 11, 11);
+}
+
+.about .row .content p {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.6;
+  list-style: none;
+  color: rgb(184, 11, 11);
+}
+/* end about desain */
+
+/* start Menu desain */
+.menu h2,
+.contact h2 {
+  margin-bottom: 0rem;
+}
+
+.menu p,
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.2;
+  color: rgb(184, 11, 11);
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 3rem;
+  color: rgb(184, 11, 11);
+}
+.btn-danger {
+  background-color: rgb(255, 174, 0);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.btn-danger:hover {
+  background-color: rgb(139, 58, 0);
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+/* end menu desain */
+
+
+/* start Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+  /*end media queries  */
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: black;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: (--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover:after {
+    transform: scaleX(0.2);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+    text-decoration: (184, 11, 11);
+  }
+}
+
+/* mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* startdesain buku tamu */
+.contact {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+  font-family: 'comic sans ms' , sans-serif;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'comic sans ms' , sans-serif;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color:rgb(184, 11, 11);
+  font-family: 'comic sans ms' , sans-serif;
+}
+
+.desainpost,
+.desainget {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.desainpost label,
+.desainget label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.desainpost input[type="text"],
+.desainpost input[type="email"],
+.desainget input[type="text"],
+.desainget input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.desainpost textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.desainpost input[type="submit"],
+.desainget input[type="submit"] {
+  background-color:rgb(184, 11, 11);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.desainpost input[type="submit"]:hover,
+.desainget input[type="submit"]:hover {
+  background-color: rgb(184, 11, 11);
+}
+
+.output {
+  font-size: 18px;
+  color: #333;
+}
+/* end desain buku tamu */
+
+/*start desain footer  */
+.footer {
+  text-align: center;
+  padding: 0.1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #ffffff;
+}
+/* end desain footer */
